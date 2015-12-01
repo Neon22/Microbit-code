@@ -21,7 +21,7 @@ Mask = [[ 88, 100, 100, 100, 88 ],
 # Generate a new bottom row of random values for the flames
 def generate_line(line, start=min_brightness, end=max_brightness):
     "start and end define range of dimmest to brightest 'flames'"
-    for i in range(display_height):
+    for i in range(display_width):
         line[i] = start + microbit.random(end-start)
 
 # shift all values in the grid up one row
